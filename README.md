@@ -31,3 +31,33 @@ Exercitar o raciocínio para resolver desafios no código.
 Aprender a trabalhar com Git e GitHub no fluxo de desenvolvimento.
 
 Desenvolver sua criatividade ao personalizar o site.
+
+🏆 Desafios
+
+🎨 Estilizar o site
+
+Modifique cores, fontes e layout para deixar o site com o seu estilo.
+
+🔗 Criar navegação
+
+Configure os links do menu para que, ao clicar, o usuário seja direcionado para a seção correta da página.
+
+🖼️ Inserir uma foto sua
+
+Utilize a tag <img> para colocar uma foto e estilize com CSS (ex.: largura, altura, bordas).
+
+✍️ Estilização personalizada no nome
+
+Adicione um estilo diferente no seu nome que aparece no site (pode ser cor, fonte, sombra ou efeito especial).
+
+🌐 Adicionar redes sociais do projeto
+
+No rodapé, faça com que ao clicar em "Meninas Digitais no Cerrado" o usuário seja direcionado para o Instagram ou site do projeto.
+
+Adicione também o link para o site do Programa RENACEE_MD.
+
+⚪ Estilizar as listas
+
+Personalize as "bolinhas" ou números de listas (<ul> e <ol>), que estão no padrão do navegador, deixando-as mais criativas.
+
+💡 Dica: Soltem a criatividade! Não existe certo ou errado. A ideia é experimentar, praticar e dar a sua identidade ao projeto.
