@@ -1,0 +1,303 @@
+body {
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    background-color: rgb(255, 225, 225);
+    line-height: 1.6;
+}
+
+header {
+    background-color: #850033;
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between; /* separa esquerda e direita */
+    align-items: center;
+    padding: 0.7rem 2rem; /* 👈 dá espaçamento lateral */
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem; /* espaçamento entre os links */
+}
+
+.sin {
+    font-size: 1.3rem;
+    color: rgba(240, 236, 236, 0.9);
+    text-decoration: none;
+    padding: 0 0 0 2rem;
+}
+.sin:hover {
+    color: #fff;
+    transition: 0.3s;
+}
+
+#plantinha {
+    width: 90px;
+    border-radius: 50%;
+    margin-right: 7rem;
+}
+
+
+#titulo {
+    color:#bb0048;
+    text-align: center;
+    margin: 1rem auto;
+    max-width: 90%;
+    font-weight: bold;
+    font-size: 2rem;
+}
+#subtitulo {
+    font-weight: 500;
+    font-size: clamp(1.1rem, 1.5vw, 1rem);
+    text-align: center;
+    margin: 0 auto 2rem auto;
+    max-width: 90%;
+    color: rgb(224, 172, 0);
+}
+
+#divi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+    padding: 2rem 1rem;
+}
+.divss {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    background-color: #85003393;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.divss:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+}
+
+.tag {
+    color:#0e3000;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+.imgtag {
+    width: 170px;
+    border-radius: 50%;
+}
+
+#oproje,
+.txts,
+.titulotxts {
+    max-width: 800px;
+    margin: 1rem auto;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    text-align: left;
+    line-height: 1.6;
+}
+.titulotxts {
+    color:#bb0048;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+#infosh1, #nois, .titulos {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 0.6rem;
+    margin: 2rem auto 1rem auto;
+    border-radius: 20px;
+    max-width: 90%;
+}
+
+/* ===== SEÇÃO OBJETIVO ===== */
+#objtv {
+    margin-top: 2rem;
+    background-color: #ffd4d4;
+    padding: 1.5rem 2rem;
+}
+
+/* título da seção */
+#nosso {
+    color: #bb0048;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: left;
+    padding-left: 25rem;
+}
+
+/* agrupa texto + imagem lado a lado */
+#objtv .conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-direction: row;
+}
+
+#objtv .texto {
+    flex: 1 1 60%;
+    max-width: 600px;
+    font-size: 1.3rem;
+    margin: 2rem auto 0rem auto;
+}
+
+#moça {
+    flex: 0 0 auto;
+    max-width: 250px;
+    height: auto;
+}
+
+#infosh1, #nois {
+    background-color: #8500334b;
+    color:#850033;
+}
+.titulos {
+    background-color: #850033;
+    color: #fff;
+}
+
+#sevc {
+    margin: 2rem auto;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.8rem;
+    max-width: 90%;
+}
+#mtobg {
+    color: #850033;
+}
+#eqp {
+    margin-bottom: 2rem;
+}
+.meninasdigitais {
+    text-align: center;
+    color:#850033;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+.email {
+    text-align: center;
+    font-size: 1.2rem;
+}
+#if {
+    text-decoration: none;
+    color: #850033;
+}
+#if:hover {
+    color: #196b00;
+    transition: 0.7s;
+}
+
+#fim {
+    background-color: #850033;
+    text-align: center;
+    padding: 2rem 1rem;
+    color: rgba(240,236,236,0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#fimtxt {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* wrapper que "corta" visualmente o espaço extra */
+.logo-crop {
+    width: 1000px;       /* largura da "janela" do logo */
+    max-width: 90%;
+    height: 120px;      /* altura da "janela" */
+    overflow: hidden;   /* corta o excesso da imagem */
+    display: block;
+}
+
+.logo-crop img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* cobre a caixa, cortando espaço transparente */
+    object-position: center;
+    display: block;
+}
+
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.6rem;
+    }
+    .divss {
+        width: 140px;
+        height: 140px;
+    }
+    .imgtag {
+        width: 130px;
+    }
+    #titulo {
+        font-size: 2rem;
+    }
+    #subtitulo {
+        font-size: 1.1rem;
+    }
+    #fimtxt {
+        margin-bottom: 2rem; 
+    }
+
+    /* objtv responsivo */
+    #objtv {
+        flex-direction: column; /* só no mobile empilha */
+        text-align: center;
+    }
+
+    #objtv .conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
+    #nosso {
+        text-align: center; /* no mobile fica centralizado */
+        font-size: 1.6rem;
+        padding-left: 2rem;
+    }
+    #moça {
+        max-width: 70%;
+        margin-top: 1rem;
+    }
+    .logo-crop { width: 400px; height: 100px; }
+}
+@media (max-width: 480px) {
+    #titulo {
+        font-size: 1.6rem;
+    }
+    #subtitulo {
+        font-size: 1rem;
+    }
+    .txts, #oproje {
+        font-size: 0.9rem;
+        padding: 0 0.5rem;
+        text-align: left;
+    }
+    nav {
+        font-size: 0.9rem;
+    }
+    #min {
+        max-width: 180px;
+        margin-top: 2rem;
+    }
+    .logo-crop { width: 480px; height: 70px; }
+    
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do Circuito ao Código</title> <!-- título na aba do navegador -->
+    <link rel="stylesheet" href="reset.css"> <!-- linkar o reset -->
+    <!-- linkar a fonte com seu site -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <!-- lnikar o css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- colocar a fotinha na aba do navegador -->
+    <link rel="shortcut icon" href="img/mdc-logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="sin" href=#nosso>Objetivos</a> <!-- quando clicar nos objetivos desce a pagina -->
+            <a class="sin" href="#infosh1">Infos</a> <!-- quando clicar nas infos desce a pagina -->
+            <a class="sin" href="#nois">Nós</a> <!-- quando clicar em nós desce a pagina -->
+        </nav>
+        <img src="img/mdc-logo.png" alt="logo do mdc" id="plantinha">
+    </header>
+    <div>
+        <h1 id="titulo">Do Circuito ao Código - RENACEE_MD</h1>
+        <h2 id="subtitulo">Capacitação com Impressão 3D, Robótica e Desenvolvimento Web.</h2>
+    </div>
+    <div id="divi">
+        <div class="divss">
+
+            <img class="imgtag" src="img/vaso.jpg" alt="imagem do vaso">
+        </div>
+        <div class="divss">
+
+            <img class="imgtag" src="img/coracaoled.jpg" alt="imagem da matriz ligada funcionando">
+        </div>
+        <div class="divss">
+
+            <img class="imgtag" src="img/circuito.jpg" alt="imagem do arduino pronto">
+        </div>
+    </div>
+    <div id="objtv">
+        <h1 id="nosso">Nosso Objetivo</h1>
+        <div class="conteudo">
+            <div class="texto">
+                O projeto Do Circuito ao Código desenvolvido pelo RENACEE-MD tem como objetivo capacitar estudantes de
+                primeiro ano que cursam Técnico em Informática para Internet Integrado ao Ensino Médio no
+                <a id="if" target="_blank" href="https://ifgoiano.edu.br/home/index.php/ceres.html">
+                    IF Goiano - Campus Ceres
+                </a> em áreas como Impressão 3D, Robótica e criação de Websites.
+            </div>
+            <img id="moça" src="img/moça.png" alt="imagem de uma moça mexendo no notebook">
+        </div>
+    </div>
+
+    <div id="infos">
+        <h1 id="infosh1">Etapas da Oficina:</h1>
+        <h2 class="titulos">1º Etapa: Montando o Sistema de Umidade do Projeto Plantinha</h2>
+        <p class="txts">
+            Neste tutorial, vamos criar um protótipo que detecta a umidade do solo e indica se a planta precisa de água.
+            Tudo isso será feito com montagem simples na protoboard e programação por blocos, utilizando o PictoBlox.
+        </p>
+        <p class="titulotxts">Materiais Necessários:</p>
+        <ul class="txts">
+            <li>1 - Protoboard (placa de ensaio)</li>
+            <li>1 - Sensor de umidade do solo</li>
+            <li>1 - Placa controladora (como Arduino Uno)</li>
+            <li>1 - Matriz para sinalizar quando a planta está com sede</li>
+            <li>Cabos de conexão (jumpers)</li>
+            <li>Computador com o PictoBlox instalado</li>
+        </ul>
+        <p class="titulotxts">Conceitos Envolvidos:</p>
+        <ul class="txts">
+            <li>Protoboard: Usada para montar o circuito sem necessidade de solda.</li>
+            <li>Sensor de umidade do solo: Detecta a quantidade de água no solo e envia esse valor ao microcontrolador.
+            </li>
+            <li>Placa controladora: Placa que interpreta os dados recebidos e envia comandos (como acender um LED).</li>
+            <li>Programação em blocos (PictoBlox): Facilita o entendimento da lógica de programação com blocos visuais e
+                intuitivos.</li>
+        </ul>
+
+        <p class="titulotxts"><b>Etapas de Montagem</b></p>
+        <ol class="txts">
+            <li>Montagem do Circuito:
+                <ul>
+                    <li>Conecte o sensor de umidade à protoboard.</li>
+                    <li>Faça a ligação do sensor ao Arduino (VCC, GND e saída analógica no pino A0).</li>
+                    <li>Conecte a Matriz ao pino digital (por exemplo, D13).</li>
+                    <li>Verifique se tudo está firme e bem encaixado.</li>
+                </ul>
+            </li>
+            <li><br>Inserção do Sensor no Solo:
+                <ul>
+                    <li>Insira o sensor de umidade no solo da plantinha até cerca da metade.</li>
+                </ul>
+            </li>
+            <li><br>Programação com PictoBlox:
+                <ul>
+                    <li>Abra o PictoBlox.</li>
+                    <li>Selecione o modo "Arduino" e conecte sua placa.</li>
+                    <li>No modo "Upload", monte seu código usando blocos.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2 class="titulos">2º Etapa: Modelagem 3D do Vaso da Planta no Tinkercad</h2>
+        <p class="txts">
+            Nesta etapa, as participantes aprendem a criar um modelo digital de suporte para a plantinha inteligente,
+            com o objetivo de imprimir essa peça em 3D. O suporte segue medidas padrão de 3 cm de largura por 5 cm de
+            altura, sendo planejado para acomodar os componentes eletrônicos utilizados na montagem.
+        </p>
+        <p class="titulotxts">Ferramentas Utilizadas:</p>
+        <p class="txts">Para realizar essa parte do projeto, utilizamos a plataforma Tinkercad, que
+            permite modelar objetos 3D de forma simples e intuitiva, direto do navegador. Também são necessários um
+            computador com acesso à internet, uma impressora 3D e o filamento PLA</p>
+        <p class="titulotxts">Etapas da Modelagem</p>
+        <p class="titulotxts">Acesso ao Tinkercad:</p>
+        <ol class="txts">
+            <ul>
+                <li>As alunas acessam o site, fazem login com suas contas e iniciam um novo projeto clicando em
+                    “Criar novo design”.</li>
+            </ul>
+            </li>
+        </ol>
+        <p class="titulotxts"><br>Inserção das medidas:</p>
+        <ol class="txts">
+            <ul>
+                <li>É criado um cilindro com 3 cm de largura e 5 cm de altura. A profundidade pode ser ajustada
+                    conforme a necessidade, garantindo que o suporte acomode os componentes internos do protótipo.
+                </li>
+            </ul>
+            </li>
+        </ol>
+        <p class="titulotxts"><br>Personalização estética:</p>
+        <ol class="txts">
+            <ul>
+                <li>Com o modelo funcional pronto, as participantes são incentivadas a personalizá-lo com formas
+                    decorativas, nomes ou qualquer detalhe criativo. É usada a função de “agrupar” do Tinkercad para
+                    unir todas as partes do modelo.</li>
+            </ul>
+            </li>
+        </ol>
+        <p class="titulotxts"><br>Exportação para impressão:</p>
+        <ol class="txts">
+            <ul>
+                <li>O modelo final é exportado como arquivo .STL, o formato padrão para impressão 3D.</li>
+            </ul>
+            </li>
+        </ol>
+        <p class="titulotxts">Impressão:<br></p>
+        <p class="txts">Após exportar, o arquivo é aberto em um software de fatiamento (como o Ultimaker Cura), onde são
+            configurados o tipo de filamento, a temperatura de impressão, os suportes e o nível de preenchimento. Por
+            fim, a impressão é iniciada e, após finalizada, o suporte estará pronto para ser utilizado no projeto.
+        </p>
+
+        <h2 class="titulos">3º Etapa: Criação do Site Tutorial do Projeto Plantinha</h2>
+        <p class="txts">
+            Na etapa final do Projeto Plantinha, os participantes aprendem a criar um site simples com HTML e CSS para
+            documentar e compartilhar todas as etapas da oficina. O objetivo é tornar o conhecimento acessível a outras
+            pessoas que queiram replicar o projeto, além de incentivar o contato com o desenvolvimento web. Além da
+            criação do site, essa fase também é dedicada à introdução ao Git e ao uso do GitHub como ferramenta de
+            versionamento.
+        </p>
+        <p class="titulotxts">Ferramentas Utilizadas</p>
+        <ul class="txts">
+            <li>Editor de código (como Visual Studio Code)</li>
+            <li>Navegador de internet (Google Chrome, Firefox, etc.)</li>
+            <li>GitHub Desktop</li>
+        </ul>
+        <li class="titulotxts">Introdução ao Git e GitHub</li>
+        <p class="txts">Antes de começarem a programar, as alunas são apresentadas a dois conceitos essenciais do
+            desenvolvimento de
+            software:
+        </p>
+        <ul class="txts">
+            <li><span class="spangit">Git:</span> sistema de controle de versões que permite registrar as alterações
+                feitas no código ao longo do
+                tempo.</li>
+            <br>
+            <li><span class="spangit">GitHub:</span> plataforma online que usa o Git para armazenar e compartilhar
+                projetos de forma colaborativa.
+            </li>
+        </ul>
+        <p class="txts">
+            As alunas aprendem a importância de versionar seus projetos, colaborar em equipe e manter um histórico de
+            mudanças, além de entender como o GitHub pode ser uma vitrine de seus conhecimentos e experiências.
+        </p>
+
+        <p class="titulotxts">Subindo o Projeto com GitHub Desktop:</p>
+        <ol class="txts">
+            <li>Criam uma conta no GitHub (se ainda não tiverem).</li>
+            <li>Criam um novo repositório local com o nome do projeto (ex: projeto-plantinha).</li>
+            <li>Adicionam os arquivos do site (<i>index.html</i>, <i>style.css</i>, etc.) na pasta do repositório.</li>
+            <li>Fazem o commit das alterações.</li>
+
+        </ol>
+
+        <p class="txts">Desenvolvimento com HTML e CSS</p>
+        <p class="txts">
+            HTML (HyperText Markup Language) é a linguagem responsável por estruturar o conteúdo da página. Com o HTML,
+            conseguimos criar títulos, parágrafos, listas, links, imagens e muito mais. Ele é como a "estrutura" da
+            casa.
+        </p>
+        <p class="txts">
+            CSS (Cascading Style Sheets) é a linguagem que define o visual do site. Com o CSS, conseguimos mudar cores,
+            fontes, tamanhos, alinhamento, adicionar sombras, espaçamento e muito mais. Ele é como a "decoração" da
+            casa.
+        </p>
+        <p class="txts">
+            O index.html contém o conteúdo do site. Ele é dividido em seções como:
+        </p>
+        <p class="txts">Objetivo do Projeto</p>
+        <ul class="txts">
+            <li>Etapas da Oficina:</li>
+            <li>1º Etapa: Montando o Sistema de Umidade do Projeto Plantinha</li>
+            <li>2º Etapa: Modelagem 3D do Vaso da Planta no Tinkercad</li>
+            <li>3º Etapa: Criação do Site Tutorial do Projeto Plantinha</li>
+            <li>Sobre o Projeto</li>
+        </ul>
+        <p class="txts">
+            O no arquivo style.css as alunas definem como o site vai parecer no navegador:com as regras de estilo que
+            definem como o conteúdo do index.html será exibido.
+        </p>
+
+        <p class="titulotxts">Colocando o site no ar</p>
+        <p class="txts">Para colocar um site no ar pelo GitHub, o processo é bem simples e pode ser feito em poucos
+            passos. Primeiro, é necessário criar um repositório no GitHub e adicionar nele os arquivos do seu site
+            (HTML, CSS, JavaScript, imagens, etc.). Em seguida, basta acessar as configurações do repositório e
+            localizar a seção Pages. Lá, você escolhe a branch que deseja publicar (geralmente a main ou master) e a
+            pasta onde estão os arquivos, normalmente a raiz (/). Depois de salvar as configurações, o GitHub irá gerar
+            automaticamente um link do seu site, que ficará disponível para acesso público. Assim, em poucos minutos,
+            seu projeto já pode ser compartilhado com qualquer pessoa pela internet.</p>
+
+    </div>
+    <div id="nos">
+        <h1 id="nois">Nós</h1>
+        </h2>
+        <p class="txts">O RENACEE MD (Rede Nacional de Educação e Extensão Meninas Digitais) é uma iniciativa que visa
+            fortalecer e conectar projetos locais voltados para a inclusão e permanência de meninas e mulheres na área
+            da Computação e Tecnologias da Informação. Acreditamos que, por meio de ações educativas, colaborativas e
+            inspiradoras, é possível transformar realidades e construir um futuro mais diverso e justo na
+            tecnologia.</p>
+
+        <p class="txts">Alinhado a essa rede, o Meninas Digitais no Cerrado é um projeto parceiro, criado em 2016 no IF
+            Goiano –
+            Campus Ceres. Ele surgiu com o desejo de tornar o campus uma instituição colaboradora da Sociedade
+            Brasileira de Computação (SBC), no âmbito do programa nacional Meninas Digitais, existente desde 2011. Seu
+            principal objetivo é divulgar a área da Computação e despertar o interesse de estudantes de cursos técnicos
+            e superiores da área de Tecnologia da Informação (TI) da cidade de Ceres e região do Vale do São Patrício,
+            além de demais campi do IF Goiano incentivando-as a seguir carreira na área.</p>
+
+        <p class="txts">
+            Por meio de oficinas, palestras, eventos e projetos de extensão, buscamos criar espaços seguros, acolhedores
+            e motivadores para que meninas possam se ver e se desenvolver como futuras profissionais da tecnologia.
+
+        </p>
+    </div>
+    <div id="eqp">
+        <p id="sevc">Se você leu até aqui, o nosso <span id="mtobg">muito obrigada</span>! Conheça nossa equipe ;)</p>
+        <p class="meninasdigitais">Alanna Leticia Pessoa de Carvalho</p>
+        <p class="email">alanna.leticia@estudante.ifgoiano.edu.br</p>
+        <p class="meninasdigitais">Ana Carolina Xavier de Oliveira</p>
+        <p class="email">ana.xavier@estudante.ifgoiano.edu.br</p>
+        <p class="meninasdigitais">Janiele de Farias Machado</p>
+        <p class="email">janiele.farias@estudante.ifgoiano.edu.br</p>
+        <p class="meninasdigitais">Maria Eduarda da Silva Carrijo</p>
+        <p class="email">maria.carrijo@estudante.ifgoiano.edu.br</p>
+        <p class="meninasdigitais">Maria Luiza do Carmo Araújo Favorito</p>
+        <p class="email">maria.favorito@estudante.ifgoiano.edu.br</p>
+        <p class="meninasdigitais">Manoela Amaral Duarte</p>
+        <p class="email">manoela.amaral@estudante.ifgoiano.edu.br</p>
+        <p class="meninasdigitais">Sarah Gabriela Rodrigues Almeida</p>
+        <p class="email">sarah.gabriela@estudante.ifgoiano.edu.br</p>
+        <p class="meninasdigitais">Ramayane Bonacin Braga</p>
+        <p class="email">ramayane.santos@ifgoiano.edu.br</p>
+        <p class="meninasdigitais">Thalia Santos de Santana</p>
+        <p class="email">thalia.santana@ifgoiano.edu.br</p>
+    </div>
+    <footer id="fim">
+        <p id="fimtxt">&copy; 2025 Feito com <span id="coracao">❤</span> por Meninas Digitais no Cerrado e RENACEE-MD.
+        </p>
+        <div class="logo-crop">
+            <img id="min" src="img/logos.png" alt="logo mdc if nepeti renacee cnpq md">
+        </div>
+    </footer>
+</body>
+
+</html>
