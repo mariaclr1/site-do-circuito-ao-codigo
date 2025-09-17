@@ -1,4 +1,3 @@
-/* Customização do site */
 body {
     font-family: "SUSE", sans-serif;
     font-optical-sizing: auto;
@@ -15,22 +14,20 @@ header {
     display: flex;
     justify-content: space-between; /* separa esquerda e direita */
     align-items: center;
-    padding: 0.7rem 2rem; /* 👈 dá espaçamento lateral */
 }
 nav {
     font-size: 20px;
     width: 20%;
-    display: inline-block; /* maneira como os objetos dentro do <nav> devem se comportar */
+    display: inline-flex; /* maneira como os objetos dentro do <nav> devem se comportar */
     margin-left: 100px; /* margin determina um espaço depois do término do objeto */
     margin-top: 10vh;
-    display: inline-flex;
     justify-content: space-between;
     
 }
 #logoMDC {
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 80vh;
+    margin-right: 10vh;
     width: 90px;
     border-radius: 50%; /* arredondamento da borda */
 }
@@ -38,7 +35,7 @@ nav {
     font-size: 1.3rem;
     color: rgba(240, 236, 236, 0.9);
     text-decoration: none;
-    padding: 0 0 0 2rem;
+    padding: 0 0 2rem 2.5rem;
 }
 .sin:hover {
     color: #fff;
@@ -104,13 +101,15 @@ div {
 #fim {
     background-color: #850033;
     text-align: center;
-    padding: 2rem 1rem;
-    color: rgba(240,236,236,0.9);
+    padding: 1rem;
+    color: rgba(240, 236, 236, 0.9);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 1rem;
+    max-height: 200px; /* limite de altura */
+    overflow: hidden;  /* impede que o conteúdo ultrapasse */
 }
 
 #fimtxt {
@@ -119,12 +118,14 @@ div {
     margin: 0;
 }
 
+/* Imagem no footer */
 #min {
-    max-width: 750px; /* limita a largura máxima */
-    max-height: 600px; /* limita a altura máxima */
-    width: 100%;       /* ocupa até 100% do espaço disponível */
-    height: auto;      /* mantém proporção */
+    width: auto;
+    height: auto;
+    max-height: 100px; /* garante que a imagem caiba no footer */
     object-fit: contain;
+    display: block;
+    margin: 0 auto;
 }
 
 #infos {
@@ -237,6 +238,121 @@ div {
     margin-bottom: 20px;
     border-radius: 20px;
 }
+.mdcerenacee {
+    color: rgb(255, 186, 218);
+    text-decoration: none;
+}
+.mdcerenacee:hover {
+    color: #ff0066;
+}
 
+/* Responsividade para tablets e celulares */
+@media (max-width: 1024px) {
+    nav {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 2vh;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .sin {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    #logoMDC {
+        width: 70px;
+        margin-right: 20px;
+    }
+
+    #titulo {
+        font-size: 40px;
+        padding: 0 20px;
+    }
+
+    #subtitulo {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+
+    .txts,
+    .titulotxts,
+    .noobintxt,
+    #oproje {
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 18px;
+    }
+
+    .titulos,
+    .titulorosaClaro,
+    #sevc {
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size: 22px;
+    }
+
+    #arduino, #projeto_completo, #vaso {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    #min {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sin {
+        padding: 0.5rem;
+    }
+
+    #titulo {
+        font-size: 30px;
+    }
+
+    #subtitulo {
+        font-size: 16px;
+    }
+
+    .txts,
+    .titulotxts,
+    .noobintxt,
+    #oproje {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 16px;
+    }
+
+    .titulos,
+    .titulorosaClaro,
+    #sevc {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 20px;
+    }
+
+    #logoMDC {
+        width: 60px;
+        margin: 10px auto;
+    }
+
+    #fimtxt {
+        font-size: 14px;
+    }
+}
 
 
