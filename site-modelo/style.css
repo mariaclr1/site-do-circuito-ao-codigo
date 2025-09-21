@@ -3,12 +3,12 @@ body {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    background-color: rgb(255, 225, 225);
+    background-color:#d0c0d5;
     line-height: 1.6;
 
 }
 header {
-    background-color: #850033;
+    background-color: #5e4267;
     width: 100%;
     min-height: 80px;
     display: flex;
@@ -47,7 +47,7 @@ div {
 #titulo {
     font-weight: 600;
     font-style: normal;
-    color:#bb0048;
+    color:#5e4267;
     font-size: 60px;
     text-align: center;
 }
@@ -68,10 +68,10 @@ div {
 #if {
     font-weight: bold;
     text-decoration: none;
-    color: #bb0048;
+    color: #5e4267;
 }
 #if:hover {
-    color: #ff0066;
+    color: #5e4267;
     transition: 0.5s;
 }
 #oproje {
@@ -85,11 +85,11 @@ div {
 }
 .proesca {
     font-size: 18px;
-    color:#bb0048;
+    color:#5e4267;
     font-weight: bold;
 }
 .tag {
-    color:#bb0048;
+    color:#5e4267;
     font-weight: 500;
     margin-bottom: 20px;
     font-size: 29px;
@@ -99,7 +99,7 @@ div {
     width: 150px;
 }
 #fim {
-    background-color: #850033;
+    background-color: #5e4267;
     text-align: center;
     padding: 1rem;
     color: rgba(240, 236, 236, 0.9);
@@ -147,10 +147,10 @@ div {
     padding-top: 10px;
     padding-bottom: 10px;
     color:#ffffff;
-    background-color:#bb0048;
+    background-color:#5e4267;
 }
 .titulotxts{
-    color:#bb0048;
+    color:#5e4267;
     line-height: 20px;
     font-size: 20px;
     font-weight: bold;
@@ -183,7 +183,7 @@ div {
     margin-right: 200px;
 }
 #deonde {
-    color:#bb0048;
+    color:#5e4267;
     font-weight: 500;
     margin-bottom: 20px;
     font-size: 25px;
@@ -212,7 +212,7 @@ div {
     padding-top: 10px;
     padding-bottom: 10px;
     color:#ffffff;
-    background-color: #bb0048;
+    background-color: #5e4267;
 }
 #sevc {
     margin-top: 50px;
@@ -239,11 +239,11 @@ div {
     border-radius: 20px;
 }
 .mdcerenacee {
-    color: rgb(255, 186, 218);
+    color:#a75cbd;
     text-decoration: none;
 }
 .mdcerenacee:hover {
-    color: #ff0066;
+    color: #5e4267;
 }
 
 /* Responsividade para tablets e celulares */
